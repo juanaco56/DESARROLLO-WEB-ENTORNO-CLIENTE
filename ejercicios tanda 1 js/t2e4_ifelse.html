@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var respuesta = prompt ("Mensaje");
+            if (respuesta < 0 ) {
+                alert("TRAMPOSO, POR UN NUMERO DE VERDAD");
+
+            }else if(respuesta >= 0 && respuesta <= 12){
+                alert("Niño con " + respuesta + " años");
+            }else if(respuesta >= 13 && respuesta <=26) {
+                alert("Joven con " + respuesta + " años");
+
+            }else if(respuesta >= 27 && respuesta <= 59) {
+                alert("Adulto con " + respuesta + " años");
+            }else {
+                alert("Jubilado con " + respuesta + " años")
+            }
+        </script>
+    </body>
+</html>
