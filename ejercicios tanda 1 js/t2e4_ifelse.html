@@ -5,7 +5,10 @@
     </head>
     <body>
         <script>
-            var respuesta = prompt ("Mensaje");
+            var respuesta = prompt ("Dime tu edad");
+            if(isNaN(respuesta)) {
+                alert("Introduce un numero real");
+            }
             if (respuesta < 0 ) {
                 alert("TRAMPOSO, POR UN NUMERO DE VERDAD");
 
