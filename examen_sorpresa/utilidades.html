@@ -16,24 +16,43 @@
             <label for="imc"> Introduce tu peso en KGs</label>
             <input type="number" name="kg" id="kg">
             <br/>
-            <button type="submit" onsubmit="masaCorporal()">RESULTADO IMC</button>
-            <br/>
-            <br/>
         </form>
+        <button onclick="masaCorporal()">CALCULAR TU IMC</button>
+        <p id="resultado1"></p>
+        <form>
             <label for="calculadora2">CALCULADORA FCM (FRECUENCIA CARDIACA MÁXIMA)</label>
             <br/>
             <label for="fcm">Introduce tu edad:</label>
             <input type="number" name="edad" id="edad"/>
             <br/>
+            <label for="fcm">Introduce tu sexo</label>
+            <select for="sexo" id="sexo">
+                <option value="M"> Masculino</option>
+                <option value="F">Femenino</option>
+            </select>
             <br/>
+        </form>
+        <button for="calculadora2" onclick="frecuenciaCardiaca()">CALCULAR TU FMC</button>
+        <p id=resultado2></p>
+        <form>
             <label for="calculadora3">CALCULADORA DE CATEGORIA</label>
             <br/>
             <label for="anoNacimiento">Introduce tu año de nacimiento:</label>
             <input type="number" name="anoNacimiento" id="anoNacimiento">
             <br/>
-            <br/>
-            <label for="calculadora4">HORARIO DE LA ASOCIACIÓN</label>
-            <br/>
+        </form>
+        <button for="calculadora3" onclick="categoria()"> CALCULAR CATEGORIA </button>
+        <p id="resultado3"></p>
+        <br/>
+        <label for="tablas"> GENERADOR DE HORARIOS</label>
+        <br/>
+       <button onclick="generarTablaManana()">GENERAR HORARIO MAÑANA</button>
+       <br/>
+        <div id="tablaManana"></div>
+        <br/>
+        <button onclick="generarTablaTarde()">GENERAR HORARIO TARDE</button>
+        <div id="tablaTarde"></div>
+
        
     </body>
 </html>
