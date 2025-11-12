@@ -87,19 +87,17 @@ function categoria(){
 
 }
 
-
-
 function generarTablaManana() {
     let dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"];
     let textoTabla = "<table border='1'><tr><th>Horario</th>";
 
-    // Añadir encabezado con los días
+   
     for (let i = 0; i < dias.length; i++) {
         textoTabla += "<th>" + dias[i] + "</th>";
     }
     textoTabla += "</tr>";
 
-    // Añadir filas con horarios
+   
     for (let hora = 9; hora < 15; hora += 2) {
         let horaInicio = hora + ":00";
         let horaFin = (hora + 2) + ":00";
@@ -119,13 +117,13 @@ function generarTablaTarde() {
     let dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
     let textoTabla = "<table border='1'><tr><th>Horario</th>";
 
-    // Añadir encabezado con los días
+    
     for (let i = 0; i < dias.length; i++) {
         textoTabla += "<th>" + dias[i] + "</th>";
     }
     textoTabla += "</tr>";
 
-    // Añadir filas con horarios
+    
     for (let hora = 16; hora < 21; hora++) {
         let horaInicio = hora + ":00";
         let horaFin = (hora + 1) + ":00";
