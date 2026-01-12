@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+       <form>
+        <label for="disco">Nombre del disco: </label>
+        <input type="text" id="nombreDisco" name="nombreDisco" />
+        <br/>
+        <label for="grupo">Nombre del grupo: </label>
+        <input type="text" id="nombreGrupo" name="nombreGrupo" />
+        <br/>
+        <label for="anoPublicacion">Año de publicación: </label>
+        <input type="date" id="anoPublicacion" name="anoPublicacion" />
+        <br/>
+        <label for="tipoMusica">Tipo de música: </label>
+        <select for="tipoMusica">
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="punk">Punk</option>
+            <option value="indie">Indie</option>
+        </select>
+        <br/>
+        <label for="localizacion">Localización: </label>
+        <input type="number" id="estanteria" name="estanteria" />
+        <br/>
+        <label for="prestado">Prestado: </label>
+        <select form="prestado">
+            <option value="true">Si</option>
+            <option value="false" selected>No</option>
+        </select>
+        <br/>
+        <button type="submit">Enviar</button>
+       </form> 
+    </body>
+</html>
