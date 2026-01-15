@@ -1,36 +1,28 @@
+import './index.css'
+
 function App() {
-  return (
+    const users = [
+      { id: 1, name: 'Jose', role: 'WebDeveloper' },
+      { id: 2, name: 'Estefanía', role: 'WebDesigner' },
+      { id: 3, name: 'Rubén', role: 'TeamLeader' },
+      { id: 4, name: 'Antoñico', role: 'ProfesorDAW2'},
+      { id: 5, name: 'Juanaco', role: 'AlumnodeAntoñico'},
+      { id: 6, name: 'Juanky', role: 'AlumnodeAntoñico'},
+    ]
+    return (
     <>
-      {/* Luego comenta una línea dentro del JSX usando: */}
-      <h1>Nivel 1 de React desbloqueado</h1>
-      <h2>Segundo encabezado pedido en el punto 6 o 7</h2>
-
-      {/* Composición de componentes */}
-      <ParentComponent />
+      <p>Lista de usuarios activos:</p>
+      <ul>
+      {users.map(function (user) {
+      return (
+      <li key={user.id} className={user.role}>
+      {user.name} — {user.role}
+      </li>
+    )
+    })}
+    </ul>
     </>
-  );
+  )
 }
 
-function ParentComponent() {
-  return (
-    <>
-      <UserComponent />
-      <ProfileComponent />
-      <FeedComponent />
-    </>
-  );
-}
-
-function UserComponent() {
-  return <h2>User component</h2>;
-}
-
-function ProfileComponent() {
-  return <h2>Profile component</h2>;
-}
-
-function FeedComponent() {
-  return <h2>Feed component</h2>;
-}
-
-export default App;
+export default App
