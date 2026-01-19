@@ -1,28 +1,34 @@
-import './index.css'
-import { useState } from 'react'
+import { useState } from 'react';
 
-function ChildComponent(props) {
-  return (
-    <>
-      <h1>Hello {props.name}</h1>
-      <button onClick={() => props.setName("Juanky")}>Cambiar a Juanky</button>
-      <br/>
-      <button onClick={() => props.setName("Pablo")}>Cambiar a Pablo</button>
-    </>
-  )
+export default function App() {
+    const [user, setUser] = useState(true);
+    const [newEmails, setNewEmails] = useState(0);
+
+    const button = user
+        ? <button onClick={() => setUser(true)}>Logout</button>
+        : <button onClick={() => setUser({ name: 'Antoñico' })}>Login</button>;
+
+    return (
+        <>
+            <h1>Nivel 5: Renderizado condicional</h1>
+            {button}
+
+            <p>React Tema 5. DAW2</p>
+
+            {user ? (
+                <p>Bienvenido, {user.name}.</p>
+            ) : (
+                <p>Inicia sesión para continuar.</p>
+            )}
+
+            <hr />
+
+            <button onClick={() => setNewEmails((n) => n + 1)}>+1 email</button>
+            <button onClick={() => setNewEmails(0)}>Reset</button>
+
+            {newEmails > 0 && (
+                <h2>Tienes {newEmails} correos nuevos.</h2>
+            )}
+        </>
+    );
 }
-
-function ParentComponent() {
-  const [name, setName] = useState("Juanaco")
-  return <ChildComponent name={name} setName = {setName}/>
-}
-
-function App() {
-  return (
-    <div>
-      <ParentComponent />
-    </div>
-  )
-}
-
-export default App
