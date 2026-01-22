@@ -1,0 +1,17 @@
+.paragraph-text{
+    font-size: 37px;
+    color: aqua;
+}
+
+.paragraph-text:hover{
+    color: red;
+    cursor:not-allowed
+}
+
+
+@media (max-width: 600px){
+    .paragraph-text{
+        font-size: 12px;
+        color: gray
+    }
+}
