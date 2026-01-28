@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f4;
+    padding: 20px;
+}
+
+h1 {
+    color: #d32f2f;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+/* Clase pedida en el enunciado */
+.personaje {
+    width: 150px;
+    margin: 10px;
+}
