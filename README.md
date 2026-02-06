@@ -1,2 +1,4 @@
 # DESARROLLO-WEB-ENTORNO-CLIENTE
-Esto es un repositorio unicamente dedicado a la asignatura del desarrollo web en entorno cliente
+Este repositorio está para mostrar las prácticas y adquisión del título básico de JavaScript en la página CodeCamp, relacionada con Algoritmos y Estructuras de Datos
+
+Con amor Juan Antonio
