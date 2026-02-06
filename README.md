@@ -1,2 +1,4 @@
 # DESARROLLO-WEB-ENTORNO-CLIENTE
-Esto es un repositorio unicamente dedicado a la asignatura del desarrollo web en entorno cliente
+En este repositorio encontrarás todas las prácticas del primer trimestre de DAW2 Desarrollo en Entorno Cliente. Aquí lo encontrarás todo.
+
+Con amor, Juan Antonio
