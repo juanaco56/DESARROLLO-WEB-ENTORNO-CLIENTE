@@ -1,7 +1,0 @@
-/* src/index.css */
-@import 'tailwindcss';
-
-.error{
-    color:red;
-    font-size: 0.9em;
-}
