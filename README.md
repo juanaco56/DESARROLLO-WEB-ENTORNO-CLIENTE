@@ -1,2 +1,2 @@
 # DESARROLLO-WEB-ENTORNO-CLIENTE
-Esto es un repositorio unicamente dedicado a la asignatura del desarrollo web en entorno cliente
+Esto es un rama dedicada a los proyectos "grandes" que hemos realizado este segundo trimestre. Ambos han sido hechos en parejas y con muchísimo amor.
