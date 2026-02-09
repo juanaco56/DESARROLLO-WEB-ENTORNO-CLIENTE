@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            function campo20(idInput, idMensaje, idEtiqueta) {
+                let valor = document.getElementById(idInput).value;
+                let campo = document.getElementById(idInput);
+                let mensaje = document.getElementById(idMensaje);
+                let etiqueta = document.getElementById(idEtiqueta);
+
+                if (valor.length < 20) {
+                    mensaje.style.color = 'red';
+                    mensaje.innerHTML = "Mínimo 20 caracteres, actualmente: " + valor.length;
+                    campo.style.border = "2px solid red";
+                    etiqueta.style.color = "red";
+                    return false;
+                } else {
+                    mensaje.style.color = 'green';
+                    mensaje.innerHTML = "¡Correcto!";
+                    campo.style.border = "1px solid green";
+                    etiqueta.style.color = "green";
+                    return true;
+                }
+            }
+
+            function validarAno() {
+                let campo = document.getElementById("anoPublicacion");
+                let mensaje = document.getElementById("correcionAno");
+                let etiqueta = document.getElementById("labelAno");
+                let valor = campo.value;
+
+                if (valor.length == 4 && !isNaN(valor)) {
+                    mensaje.style.color = 'green';
+                    mensaje.innerHTML = "Año correcto";
+                    campo.style.border = "1px solid green";
+                    etiqueta.style.color = "green";
+                    return true;
+                } else {
+                    mensaje.style.color = 'red';
+                    mensaje.innerHTML = "El año debe ser de 4 números";
+                    campo.style.border = "2px solid red";
+                    etiqueta.style.color = "red";
+                    return false;
+                }
+            }
+
+            function validarEstanteria() {
+                let campo = document.getElementById("estanteria");
+                let mensaje = document.getElementById("correcionEstanteria");
+                let etiqueta = document.getElementById("labelEstanteria");
+
+                if (campo.value != "" && isNaN(campo.value)) {
+                    mensaje.style.color = 'red';
+                    mensaje.innerHTML = "Debe ser un número o estar vacío";
+                    campo.style.border = "2px solid red";
+                    etiqueta.style.color = "red";
+                    return false;
+                } else {
+                    mensaje.style.color = 'green';
+                    mensaje.innerHTML = "Localización válida";
+                    campo.style.border = "1px solid green";
+                    etiqueta.style.color = "green";
+                    return true;
+                }
+            }
+
+            window.onload = function() {
+                let formulario = document.getElementById("miFormulario");
+                formulario.addEventListener("submit", function(event) {
+                    let v1 = campo20('nombreDisco', 'correcionNombre', 'labelDisco');
+                    let v2 = campo20('nombreGrupo', 'correcionGrupo', 'labelGrupo');
+                    let v3 = validarAno();
+                    let v4 = validarEstanteria();
+
+                    if (v1 == false || v2 == false || v3 == false || v4 == false) {
+                        event.preventDefault();
+                        alert("Error en el formulario");
+                    }
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <form id="miFormulario">
+            <label id="labelDisco">Nombre del disco: </label>
+            <input type="text" id="nombreDisco" onkeyup="campo20('nombreDisco', 'correcionNombre', 'labelDisco')"/>
+            <h4 id="correcionNombre"></h4>
+
+            <label id="labelGrupo">Nombre del grupo: </label>
+            <input type="text" id="nombreGrupo" onkeyup="campo20('nombreGrupo', 'correcionGrupo', 'labelGrupo')"/>
+            <h4 id="correcionGrupo"></h4>
+
+            <label id="labelAno">Año de publicación: </label>
+            <input type="text" id="anoPublicacion" onkeyup="validarAno()"/>
+            <h4 id="correcionAno"></h4>
+
+            <label>Tipo de música: </label>
+            <select>
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="punk">Punk</option>
+                <option value="indie">Indie</option>
+            </select>
+            <br/><br/>
+
+            <label id="labelEstanteria">Localización (estantería): </label>
+            <input type="text" id="estanteria" onkeyup="validarEstanteria()"/>
+            <h4 id="correcionEstanteria"></h4>
+
+            <label>Prestado: </label>
+            <select>
+                <option value="true">Si</option>
+                <option value="false" selected>No</option>
+            </select>
+            <br/><br/>
+
+            <button type="submit">Enviar</button>
+        </form> 
+    </body>
+</html>
