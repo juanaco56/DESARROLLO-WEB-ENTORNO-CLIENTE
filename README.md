@@ -1,19 +1,54 @@
-# DESARROLLO-WEB-ENTORNO-CLIENTE
-Esto es un repositorio unicamente dedicado a la asignatura del desarrollo web en entorno cliente
+# 🌐 DESARROLLO-WEB-ENTORNO-CLIENTE
 
-Su estructura es la siguiente:
+Este repositorio está dedicado exclusivamente a la asignatura  
+**Desarrollo Web en Entorno Cliente** del ciclo **DAW2**.
 
-### En la rama 1TRIMESTRE: 
-Encontramos todo lo relacionado con *el 1er trimestre*, todas sus prácticas y trabajos.
+Aquí se recoge todo el trabajo realizado durante el curso, organizado por ramas según el trimestre o tipo de contenido.
 
-### En la rama CodeCamp:
-Encontrarás capturas de pantalla, documentación y titulación de JavaScript obtenida en codeCamp, de nivel de Estructura de datos y Algoritmos.
+---
 
-### En la rama 2TRIMESTRE:
-Encontrarás capturas de pantalla de todos los trabajos realizados en el segundo trimestre, tales como DOM, react, objetos...
+## 📂 Estructura del repositorio
 
-### En la rama PROYECTOS:
-Encontrarás los dos proyectos realizados con mi compañero Juan Carlos, consistentes en una calculadora sentimental (1er trimestre) y un Wordle de actores (2do trimestre).
+### 🌱 Rama **1TRIMESTRE**
+Contiene todas las prácticas y ejercicios realizados durante el **primer trimestre**, incluyendo:
+- JavaScript básico
+- Primeros proyectos
+- Ejercicios y exámenes
 
+---
 
-Con amor, Juan
+### 🧠 Rama **CodeCamp**
+Incluye el trabajo relacionado con la certificación de **JavaScript en freeCodeCamp**:
+- Prácticas de algoritmos y estructuras de datos
+- Proyectos del curso
+- Material de la titulación
+
+---
+
+### 🌐 Rama **2TRIMESTRE**
+Aquí se encuentran las prácticas del **segundo trimestre**, centradas en:
+- Manipulación del DOM
+- Formularios y validaciones
+- Cookies
+- Introducción a React
+
+---
+
+### 🚀 Rama **PROYECTOS**
+Contiene los proyectos principales realizados en pareja con **Juan Carlos**:
+
+- 🧮 **Calculadora Sentimental** (1er trimestre)  
+- 🎭 **Actordle** – Wordle de actores (2º trimestre)
+
+---
+
+## 🎓 Objetivo del repositorio
+Mostrar la evolución, prácticas y proyectos desarrollados durante la asignatura, así como los conocimientos adquiridos a lo largo del curso.
+
+---
+
+## ❤️ Nota personal
+Este repositorio representa todo el esfuerzo, aprendizaje y crecimiento durante la asignatura.
+
+**Con amor,  
+Juan**
